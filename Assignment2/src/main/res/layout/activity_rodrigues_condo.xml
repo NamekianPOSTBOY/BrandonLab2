@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".rodriguesActivityCondo">
+
+        <ImageView
+            android:id="@+id/brandon_ImageBoxC1"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:contentDescription="@string/condo1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/brandon_TextBoxC1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.04"
+            app:srcCompat="@drawable/condo1" />
+
+        <TextView
+            android:id="@+id/brandon_TextBoxC1"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:gravity="center_vertical"
+            android:text="@string/condo1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <CheckBox
+            android:id="@+id/brandon_CheckBoxC1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/visit_v_p"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toEndOf="@+id/brandon_TextBoxC1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.024" />
+
+
+
+
+        <ImageView
+            android:id="@+id/brandon_ImageBoxC2"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brandon_ImageBoxC1"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/apartment2"
+            android:contentDescription="@string/condo2" />
+
+        <TextView
+            android:id="@+id/brandon_TextBoxC2"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:gravity="center_vertical"
+            android:text="@string/condo2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brandon_TextBoxC1" />
+
+        <CheckBox
+            android:id="@+id/brandon_CheckBoxC2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/visit_v_p"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toEndOf="@+id/brandon_TextBoxC2"
+            app:layout_constraintTop_toBottomOf="@+id/brandon_CheckBoxC1"
+            app:layout_constraintVertical_bias="0.047" />
+
+
+        <ImageView
+            android:id="@+id/brandon_ImageBoxC3"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brandon_ImageBoxC2"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/apartment3"
+            android:contentDescription="@string/condo3" />
+
+        <TextView
+            android:id="@+id/brandon_TextBoxC3"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:gravity="center_vertical"
+            android:text="@string/condo3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brandon_TextBoxC2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/brandon_CheckBoxC3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:text="@string/visit_v_p"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toEndOf="@+id/brandon_TextBoxC3"
+            app:layout_constraintTop_toBottomOf="@+id/brandon_CheckBoxC2"
+            app:layout_constraintVertical_bias="0.005" />
+
+        <ImageView
+            android:id="@+id/brandon_ImageBoxC4"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/brandon_TextBoxC4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/apartment4"
+            android:contentDescription="@string/condo4" />
+        <TextView
+            android:id="@+id/brandon_TextBoxC4"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:gravity="center_vertical"
+            android:text="@string/condo4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brandon_TextBoxC3" />
+        <CheckBox
+            android:id="@+id/brandon_CheckBoxC4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="@string/visit_v_p"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toEndOf="@+id/brandon_TextBoxC4"
+            app:layout_constraintTop_toBottomOf="@+id/brandon_CheckBoxC3"
+            app:layout_constraintVertical_bias="0.09" />
+
+        <Button
+            android:id="@+id/brandon_CondoCheckout"
+            android:layout_width="98dp"
+            android:layout_height="45dp"
+            android:text="@string/checkoutBttn"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.932"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

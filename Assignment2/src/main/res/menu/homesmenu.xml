@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/brandon_ApartmentMenu"
+        android:title="@string/apartments">
+
+    </item>
+    <item
+        android:id="@+id/brandon_DetachedMenu"
+        android:title="@string/detached_homes">
+
+    </item>
+    <item
+        android:id="@+id/brandon_SemiMenu"
+        android:title="@string/semi_detached_homes">
+
+    </item>
+
+    <item
+        android:id="@+id/brandon_CondoMenu"
+        android:title="@string/condominium_apartments">
+
+    </item>
+
+    <item
+        android:id="@+id/brandon_THMenu"
+        android:title="@string/town_houses">
+
+    </item>
+</menu>

@@ -1,4 +1,32 @@
 <resources>
-    <string name="app_name">BrandonLab2</string>
+    <string name="app_name">LeaseOrRentHomes Inc.</string>
     <string name="enterBttn">Enter</string>
+    <string name="apartments">Apartments</string>
+    <string name="detached_homes">Detached Homes</string>
+    <string name="semi_detached_homes">Semi-Detached Homes</string>
+    <string name="condominium_apartments">Condominium Apartments</string>
+    <string name="town_houses">Town Houses</string>
+
+    <string name="visit_v_p">Visit (V/P)</string>
+    <string name="apt1">  Apt, 33 Gaida Rd., $699 / month</string>
+    <string name="apt2">  Apt, 167 Top Ave., $799 / month</string>
+    <string name="apt3">  Apt, 123 Fake St., $499 / month</string>
+    <string name="apt4">  Apt, 52 Weir Crst., $499 / month</string>
+    <string name="checkoutBttn">Checkout</string>
+    <string name="condo1">  Condo, Super St., $399 / month</string>
+    <string name="condo2">  Condo, 45 Reedwell Dr., $449 / month</string>
+    <string name="condo3">  Condo, Foothill Rd., $549 / month</string>
+    <string name="condo4">  Condo, 61 Dream Dr., $749 / month</string>
+    <string name="detached1">  Detached, 21 Botch Ave, $399 / month</string>
+    <string name="detached2">  Detached, 27 Tinview Rd, $599 / month</string>
+    <string name="detached3">  Detached, 47 Youthsmill Ave, $499 / month</string>
+    <string name="detached4">  Detached, 88 Saffring St, $699 / month</string>
+    <string name="semi1">  Semi, 34 Rouge Hill, $449 / month</string>
+    <string name="semi2">  Semi, 39 Rocky Rd., $479 / month</string>
+    <string name="semi3">  Semi, 79 Thrumin Rd., $569 / month</string>
+    <string name="semi4">  Semi, 388 Runscreek St., $749 / month</string>
+    <string name="townhouse1">  Town House, 44 Deane Ave., $469 / month</string>
+    <string name="townhouse2">  Town House, 685 Maple Ave., $649 / month</string>
+    <string name="townhouse3">  Town House, 333 Fiona Crst., $569 / month</string>
+    <string name="townhouse4">  Town House, 777 Lucky Ln., $339 / month</string>
 </resources>

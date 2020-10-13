@@ -15,7 +15,7 @@ private Button enterBttn;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        enterBttn = (Button)  findViewById(R.id.Brandon_MMbutton);
+        enterBttn = (Button)  findViewById(R.id.brandon_MMbutton);
         enterBttn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

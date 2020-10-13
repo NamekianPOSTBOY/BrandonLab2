@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".rodriguesActivityHomes"></activity>
+        <activity android:name=".rodriguesActivityCheckout"></activity>
+        <activity android:name=".rodriguesActivityTownHouse" />
+        <activity android:name=".rodriguesActivityCondo" />
+        <activity android:name=".rodriguesActivitySemi" />
+        <activity android:name=".rodriguesActivityDetached" />
+        <activity android:name=".rodriguesActivityApartment" />
+        <activity android:name=".rodriguesActivityHomes" />
         <activity android:name=".brandonActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
