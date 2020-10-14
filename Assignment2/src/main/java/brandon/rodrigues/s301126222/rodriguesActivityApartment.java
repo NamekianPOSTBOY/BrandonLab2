@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextThemeWrapper;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -14,17 +15,12 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
-
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class rodriguesActivityApartment extends AppCompatActivity {
-
-    CheckBox box1 = (CheckBox) findViewById(R.id.brandon_CheckBoxA1);
-    CheckBox box2 = (CheckBox) findViewById(R.id.brandon_CheckBoxA2);
-    CheckBox box3 = (CheckBox) findViewById(R.id.brandon_CheckBoxA3);
-    CheckBox box4 = (CheckBox) findViewById(R.id.brandon_CheckBoxA4);
-    Context context;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,52 +28,52 @@ public class rodriguesActivityApartment extends AppCompatActivity {
         setContentView(R.layout.activity_rodrigues_apartment);
 
         Button checkoutBttn = (Button) findViewById(R.id.brandon_AptCheckout);
+        final CheckBox box1 = (CheckBox) findViewById(R.id.brandon_CheckBoxA1);
+        final  CheckBox box2 = (CheckBox) findViewById(R.id.brandon_CheckBoxA2);
+        final CheckBox box3 = (CheckBox) findViewById(R.id.brandon_CheckBoxA3);
+        final CheckBox box4 = (CheckBox) findViewById(R.id.brandon_CheckBoxA4);
+
+      //  final Set<String> selectedHomes = new HashSet<String>();
 
         checkoutBttn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SharedPreferences myChosenHomes =
-                        getSharedPreferences("userSelectedHomes", 0);
-                SharedPreferences.Editor prefEditor = myChosenHomes.edit();
+                int count = 0;
+                SharedPreferences myPreference = getSharedPreferences("myRentalHomes", 0);
+                SharedPreferences.Editor prefEditor = myPreference.edit();
+                List<String> list = new ArrayList<>();
+
                 if(box1.isChecked()){
-                    prefEditor.putString("home1", context.getString(R.string.apt1));
-                    prefEditor.apply();
-                    //call intent only to show the next activity
-                }else{
-                    prefEditor.putString("home1", null);
+                    prefEditor.putString("mySelectedHomes1", getResources().getString(R.string.apt1));
+                    count++;
+
                     prefEditor.apply();
                 }
                 if(box2.isChecked()){
-                    prefEditor.putString("home2", context.getString(R.string.apt2));
+                    prefEditor.putString("mySelectedHomes2", getResources().getString(R.string.apt2));
                     prefEditor.apply();
-                    //call intent only to show the next activity
-                }else{
-                    prefEditor.putString("home2", null);
-                    prefEditor.apply();
+                    count++;
                 }
                 if(box3.isChecked()){
-                    prefEditor.putString("home3", context.getString(R.string.apt3));
-                    prefEditor.apply();
-                    //call intent only to show the next activity
-                }else{
-                    prefEditor.putString("home3", null);
+                    prefEditor.putString("mySelectedHomes3", getResources().getString(R.string.apt3));
+                    count++;
+
                     prefEditor.apply();
                 }
                 if(box4.isChecked()){
-                    prefEditor.putString("home4", context.getString(R.string.apt4));
+                    prefEditor.putString("mySelectedHomes4", getResources().getString(R.string.apt4));
                     prefEditor.apply();
-                    //call intent only to show the next activity
-                }else{
-                    prefEditor.putString("home4", null);
-                    prefEditor.apply();
+                    count++;
                 }
+
+                prefEditor.putInt("myHomeCount", count);
+                prefEditor.apply();
 
                 if(!box1.isChecked() && !box2.isChecked() && !box3.isChecked() && !box4.isChecked()){
                     Toast.makeText(rodriguesActivityApartment.this, "No homes were selected!", Toast.LENGTH_LONG).show();
                 }else{
                     rodriguesActivityCheckout();
                 }
-
             }
         });
     }

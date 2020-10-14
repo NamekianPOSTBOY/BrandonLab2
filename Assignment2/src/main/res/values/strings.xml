@@ -29,4 +29,8 @@
     <string name="townhouse2">  Town House, 685 Maple Ave., $649 / month</string>
     <string name="townhouse3">  Town House, 333 Fiona Crst., $569 / month</string>
     <string name="townhouse4">  Town House, 777 Lucky Ln., $339 / month</string>
+    <string name="proceed_to_payment">Proceed to Payment</string>
+    <string name="userSelectedHomesTitle"> Select a Visited Home to Rent:</string>
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
 </resources>

@@ -6,4 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".rodriguesActivityCheckout">
 
+    <RadioGroup
+        android:id="@+id/brandonUserSelectedHomesRadio"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandonUserSelectedHomesTitle"
+        app:layout_constraintVertical_bias="0.0">
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/brandonPaymentRadioBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandonPaymentChoicesTitle"
+        app:layout_constraintVertical_bias="0.0">
+        <RadioButton
+            android:id="@+id/brandonDebit"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/debit"
+            > </RadioButton>
+
+        <RadioButton
+            android:id="@+id/brandonCredit"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/credit"
+            > </RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/brandonUserSelectedHomesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="@string/userSelectedHomesTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <Button
+        android:id="@+id/brandonPaymentBtn"
+        android:layout_width="147dp"
+        android:layout_height="90dp"
+        android:text="@string/proceed_to_payment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandonPaymentRadioBtn"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <TextView
+        android:id="@+id/brandonPaymentChoicesTitle"
+        android:layout_width="409dp"
+        android:layout_height="68dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandonUserSelectedHomesRadio"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

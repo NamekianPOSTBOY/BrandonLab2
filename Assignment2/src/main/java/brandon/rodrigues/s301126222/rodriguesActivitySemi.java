@@ -13,13 +13,10 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
-public class rodriguesActivitySemi extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
-    CheckBox box1 = (CheckBox) findViewById(R.id.brandon_CheckBoxS1);
-    CheckBox box2 = (CheckBox) findViewById(R.id.brandon_CheckBoxS2);
-    CheckBox box3 = (CheckBox) findViewById(R.id.brandon_CheckBoxS3);
-    CheckBox box4 = (CheckBox) findViewById(R.id.brandon_CheckBoxS4);
-    Context context;
+public class rodriguesActivitySemi extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,44 +24,41 @@ public class rodriguesActivitySemi extends AppCompatActivity {
         setContentView(R.layout.activity_rodrigues_semi);
         Button checkoutBttn = (Button) findViewById(R.id.brandon_SemiCheckout);
 
+       final CheckBox box1 = (CheckBox) findViewById(R.id.brandon_CheckBoxS1);
+       final CheckBox box2 = (CheckBox) findViewById(R.id.brandon_CheckBoxS2);
+       final CheckBox box3 = (CheckBox) findViewById(R.id.brandon_CheckBoxS3);
+       final CheckBox box4 = (CheckBox) findViewById(R.id.brandon_CheckBoxS4);
+
         checkoutBttn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SharedPreferences myChosenHomes =
-                        getSharedPreferences("userSelectedHomes", 0);
-                SharedPreferences.Editor prefEditor = myChosenHomes.edit();
+                int count = 0;
+                SharedPreferences myPreference = getSharedPreferences("myRentalHomes", 0);
+                SharedPreferences.Editor prefEditor = myPreference.edit();
+
                 if(box1.isChecked()){
-                    prefEditor.putString("home1", context.getString(R.string.semi1));
-                    prefEditor.apply();
-                    //call intent only to show the next activity
-                }else{
-                    prefEditor.putString("home1", null);
+                    prefEditor.putString("mySelectedHomes1", getResources().getString(R.string.semi1));
+                    count++;
                     prefEditor.apply();
                 }
                 if(box2.isChecked()){
-                    prefEditor.putString("home2", context.getString(R.string.semi2));
+                    prefEditor.putString("mySelectedHomes2", getResources().getString(R.string.semi2));
                     prefEditor.apply();
-                    //call intent only to show the next activity
-                }else{
-                    prefEditor.putString("home2", null);
-                    prefEditor.apply();
+                    count++;
                 }
                 if(box3.isChecked()){
-                    prefEditor.putString("home3", context.getString(R.string.semi3));
-                    prefEditor.apply();
-                    //call intent only to show the next activity
-                }else{
-                    prefEditor.putString("home3", null);
+                    prefEditor.putString("mySelectedHomes3", getResources().getString(R.string.semi3));
+                    count++;
                     prefEditor.apply();
                 }
                 if(box4.isChecked()){
-                    prefEditor.putString("home4", context.getString(R.string.semi4));
+                    prefEditor.putString("mySelectedHomes4", getResources().getString(R.string.semi4));
                     prefEditor.apply();
-                    //call intent only to show the next activity
-                }else{
-                    prefEditor.putString("home4", null);
-                    prefEditor.apply();
+                    count++;
                 }
+
+                prefEditor.putInt("myHomeCount", count);
+                prefEditor.apply();
 
                 if(!box1.isChecked() && !box2.isChecked() && !box3.isChecked() && !box4.isChecked()){
                     Toast.makeText(rodriguesActivitySemi.this, "No homes were selected!", Toast.LENGTH_LONG).show();
