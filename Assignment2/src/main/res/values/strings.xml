@@ -33,4 +33,19 @@
     <string name="userSelectedHomesTitle"> Select a Visited Home to Rent:</string>
     <string name="debit">Debit</string>
     <string name="credit">Credit</string>
+    <string name="payment_info">Payment Info:</string>
+    <string name="full_name">Full Name:</string>
+    <string name="favourite_team">Favourite Team:</string>
+    <string name="favourite_game">Favourite Game:</string>
+    <string name="logo">LeaseOrRentHome Inc. Logo</string>
+    <string name="complete_transaction">Complete Transaction</string>
+    <string name="nameHint">First and Last</string>
+    <string name="numbers_only">Numbers only</string>
+    <string name="teamHint">i.e. Atlanta Suns</string>
+    <string name="gameHInt">i.e. Overwatch</string>
+    <string name="selected_homes_title">Selected Homes:</string>
+    <string name="start_instructions">Click on the menu at the top right corner of the screen to get started!</string>
+    <string name="card_number">Card Number:</string>
 </resources>
+
+<!-- Brandon Rodrigues 301126222 SEC.02 -->

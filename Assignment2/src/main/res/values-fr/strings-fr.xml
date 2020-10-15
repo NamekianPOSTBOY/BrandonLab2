@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LeaseOrRentHomes Inc.</string>
+    <string name="enterBttn">entrez</string>
+    <string name="apartments">Appartement</string>
+    <string name="detached_homes">Maison Individuelle</string>
+    <string name="semi_detached_homes">Maison Jumelée</string>
+    <string name="condominium_apartments">Copropriétés</string>
+    <string name="town_houses">Maison de Villes</string>
+
+    <string name="visit_v_p">Visitez (V/P)</string>
+    <string name="apt1">  Apt, 33 Gaida Rd., $699 / moi</string>
+    <string name="apt2">  Apt, 167 Top Ave., $799 / moi</string>
+    <string name="apt3">  Apt, 123 Fake St., $499 / moi</string>
+    <string name="apt4">  Apt, 52 Weir Crst., $499 / moi</string>
+    <string name="checkoutBttn">Check-out</string>
+    <string name="condo1">  Copropriété, Super St., $399 / moi</string>
+    <string name="condo2">  Copropriété, 45 Reedwell Dr., $449 / moi</string>
+    <string name="condo3">  Copropriété, Foothill Rd., $549 / moi</string>
+    <string name="condo4">  Copropriété, 61 Dream Dr., $749 / moi</string>
+    <string name="detached1">  Maison Individuelle, 21 Botch Ave, $399 / moi</string>
+    <string name="detached2">  Maison Individuelle, 27 Tinview Rd, $599 / moi</string>
+    <string name="detached3">  Maison Individuelle, 47 Youthsmill Ave, $499 / moi</string>
+    <string name="detached4">  Maison Individuelle, 88 Saffring St, $699 / moi</string>
+    <string name="semi1">  Maison Jumelée, 34 Rouge Hill, $449 / moi</string>
+    <string name="semi2">  Maison Jumelée, 39 Rocky Rd., $479 / moi</string>
+    <string name="semi3">  Maison Jumelée, 79 Thrumin Rd., $569 / moi</string>
+    <string name="semi4">  Maison Jumelée, 388 Runscreek St., $749 / moi</string>
+    <string name="townhouse1">  Maison de Ville, 44 Deane Ave., $469 / moi</string>
+    <string name="townhouse2">  Maison de Ville, 685 Maple Ave., $649 / moi</string>
+    <string name="townhouse3">  Maison de Ville, 333 Fiona Crst., $569 / moi</string>
+    <string name="townhouse4">  Maison de Ville, 777 Lucky Ln., $339 / moi</string>
+    <string name="proceed_to_payment">Procéder au paiement</string>
+    <string name="userSelectedHomesTitle"> Sélectionnez une maison visitée à louer:</string>
+    <string name="debit">Débit</string>
+    <string name="credit">Crédit</string>
+    <string name="payment_info">Information de Paiement:</string>
+    <string name="full_name">Nom Complet:</string>
+    <string name="favourite_team">Équipe Favorite:</string>
+    <string name="favourite_game">Jeu Favorite</string>
+    <string name="logo">LeaseOrRentHome Inc. Logo</string>
+    <string name="complete_transaction">Transaction Complète</string>
+    <string name="nameHint">Premier et Dernier</string>
+    <string name="numbers_only">Chiffres Uniquement</string>
+    <string name="teamHint">i.e. Atlanta Suns</string>
+    <string name="gameHInt">i.e. Overwatch</string>
+    <string name="selected_homes_title">Maisons Sélectionnées:</string>
+    <string name="start_instructions">Cliquez sur le menu en haut à droite de écran pour commencer!</string>
+    <string name="card_number">Numéro de Carte:</string>
+</resources>

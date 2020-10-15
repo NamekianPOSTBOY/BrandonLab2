@@ -141,3 +141,5 @@ public class rodriguesActivityApartment extends AppCompatActivity {
         startActivity(intentTownHouse);
     }
 }
+
+// Brandon Aaron Rodrigues 301126222 SEC.02

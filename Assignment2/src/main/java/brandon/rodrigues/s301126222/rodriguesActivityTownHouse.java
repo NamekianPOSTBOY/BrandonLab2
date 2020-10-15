@@ -133,5 +133,6 @@ public class rodriguesActivityTownHouse extends AppCompatActivity {
         Intent intentApartment = new Intent(this, rodriguesActivityApartment.class);
         startActivity(intentApartment);
     }
-
     }
+
+// Brandon Aaron Rodrigues 301126222 SEC.02

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="title_text">14pt</dimen>
+    <dimen name="heading_text">10pt</dimen>
+    <dimen name="minor_text">8pt</dimen>
+</resources>

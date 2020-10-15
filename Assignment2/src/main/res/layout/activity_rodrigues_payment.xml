@@ -1,26 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".rodriguesActivityPayment">
+    android:background="@color/background_color"
+    tools:context=".rodriguesActivityPayment"
+    >
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+    <TableRow
+        android:id="@+id/brandon_PaymentTableTitle">
+        <TextView
+            android:id="@+id/brandonPaymentTitle"
+            style="@style/title_style"
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_info"
+            android:layout_width="match_parent"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/brandon_EmptyRow">
+        <TextView
+            android:id="@+id/EmptyTextView"
+            style="@style/title_style"
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/brandon_UserName">
+        <TextView
+            android:id="@+id/brandon_UserNameTitle"
+            style="@style/heading_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/full_name" />
+        <EditText
+            android:id="@+id/brandon_UserNameInput"
+            style="@style/input_text_style"
+
+            android:layout_height="wrap_content"
+            android:hint="@string/nameHint"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:maxLength="50"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/brandon_PaymentInfo">
+        <TextView
+            android:id="@+id/brandon_PaymentInfoTitle"
+            style = "@style/heading_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_number"
+             />
+        <EditText
+            android:id="@+id/brandon_PaymentInput"
+            style="@style/input_text_style"
+
+            android:layout_height="wrap_content"
+            android:hint="@string/numbers_only"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:maxLength="16"
+            android:inputType="phone"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/brandonFavouriteTeam">
+        <TextView
+            android:id="@+id/brandon_FavouriteTeamTitle"
+             style="@style/heading_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/favourite_team" />
+        <EditText
+            android:id="@+id/brandon_FavouriteTeamInput"
+            style="@style/input_text_style"
+
+            android:layout_height="wrap_content"
+            android:hint="@string/teamHint"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:maxLength="30"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/brandon_FavouriteGame">
+        <TextView
+            android:id="@+id/brandon_FavouriteGameTitle"
+            style="@style/heading_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/favourite_game" />
+        <EditText
+            android:id="@+id/brandon_FavouriteVGInput"
+            style="@style/input_text_style"
+
+            android:layout_height="wrap_content"
+            android:hint="@string/gameHInt"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:maxLength="20"
+             />
+    </TableRow>
+</TableLayout>
+
+    <ImageView
+        android:id="@+id/brandon_LogoFinalScreen"
         android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/logo" />
+
+    <Button
+        android:id="@+id/brandon_ButtonFinalScreen"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:text="@string/complete_transaction" />
 </LinearLayout>

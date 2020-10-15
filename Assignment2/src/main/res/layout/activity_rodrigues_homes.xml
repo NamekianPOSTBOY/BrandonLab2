@@ -6,4 +6,16 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".rodriguesActivityHomes"/>
+    android:background="@color/background_color"
+    tools:context=".rodriguesActivityHomes">
+
+    <TextView
+        style="@style/title_style"
+        android:paddingLeft="@android:dimen/app_icon_size"
+        android:paddingRight="@android:dimen/app_icon_size"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/start_instructions" />
+</LinearLayout>

@@ -1,17 +1,11 @@
 package brandon.rodrigues.s301126222;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.view.View;
-import brandon.rodrigues.s301126222.rodriguesHome;
-import android.widget.AdapterView;
-import android.widget.TextView;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -70,6 +64,7 @@ public class rodriguesActivityHomes extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
         return true;
-
       }
     }
+
+// Brandon Aaron Rodrigues 301126222 SEC.02

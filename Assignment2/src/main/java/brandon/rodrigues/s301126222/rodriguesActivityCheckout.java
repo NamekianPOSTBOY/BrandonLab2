@@ -45,10 +45,9 @@ public class rodriguesActivityCheckout extends AppCompatActivity {
 
 
         TextView tView = (TextView)findViewById(R.id.brandonUserSelectedHomesTitle);
-        tView.setText("Please work" );
 
         TextView tView2 = (TextView)findViewById(R.id.brandonPaymentChoicesTitle);
-        tView2.setText("Butt" );
+
         SharedPreferences myPaymentPref = getSharedPreferences("myPayMethod", 0);
         final SharedPreferences.Editor prefPayment = myPaymentPref.edit();
 
@@ -69,20 +68,14 @@ public class rodriguesActivityCheckout extends AppCompatActivity {
                 }else{
                     rodriguesActivityPayment();
                 }
-
             }
         });
     }
 
-
-  //  public void OnCheckedChanged(RadioGroup group, int checkedID){
-//if(checkedID == -1){
-
-//}
-    //}
     public void rodriguesActivityPayment(){
         Intent intentPay = new Intent(this, rodriguesActivityPayment.class);
         startActivity(intentPay);
     }
-
 }
+
+// Brandon Aaron Rodrigues 301126222 SEC.02

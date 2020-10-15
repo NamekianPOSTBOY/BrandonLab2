@@ -7,4 +7,33 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="title_style">
+        <item name="android:textColor">
+            @color/title_text_color
+
+        </item>
+        <item name="android:textSize">
+            @dimen/title_text
+        </item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="heading_style">
+        <item name="android:textColor">
+            @color/header_color
+        </item>
+        <item name="android:textSize">
+            @dimen/heading_text
+        </item>
+    </style>
+
+    <style name="input_text_style">
+        <item name="android:textColor">
+            @color/input_color
+        </item>
+        <item name="android:textSize">
+            @dimen/minor_text
+        </item>
+    </style>
+
 </resources>

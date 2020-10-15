@@ -125,7 +125,6 @@ public class rodriguesActivityDetached extends AppCompatActivity {
         startActivity(intentCondo);
     }
 
-
     public void rodriguesActivitySemi(){
 
         Intent intentSemi = new Intent(this, rodriguesActivityDetached.class);
@@ -135,5 +134,7 @@ public class rodriguesActivityDetached extends AppCompatActivity {
 
         Intent intentTownHouse = new Intent(this, rodriguesActivityDetached.class);
         startActivity(intentTownHouse);
+      }
     }
-    }
+
+// Brandon Aaron Rodrigues 301126222 SEC.02

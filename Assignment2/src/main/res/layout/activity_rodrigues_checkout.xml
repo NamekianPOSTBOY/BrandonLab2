@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".rodriguesActivityCheckout">
 
     <RadioGroup
@@ -47,10 +48,12 @@
     </RadioGroup>
 
     <TextView
+        style = "@style/title_style"
         android:id="@+id/brandonUserSelectedHomesTitle"
         android:layout_width="match_parent"
         android:layout_height="59dp"
-        android:text="@string/userSelectedHomesTitle"
+        android:text="@string/selected_homes_title"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -70,10 +73,12 @@
         app:layout_constraintVertical_bias="0.493" />
 
     <TextView
+        style="@style/title_style"
         android:id="@+id/brandonPaymentChoicesTitle"
         android:layout_width="409dp"
         android:layout_height="68dp"
-        android:text="TextView"
+        android:text="Pay Info:"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
